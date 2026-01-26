@@ -13,3 +13,12 @@ X = np.array([cat, eats, fish])
 print("Input matrix X:")
 print(X)
 print(f"Shape: {X.shape}")
+
+np.random.seed(42)
+
+d_model = 4
+d_k = 3
+
+Wq = np.random.randn(d_model, d_k) * 0.1
+Wk = np.random.randn(d_model, d_k) * 0.1
+Wv = np.random.randn(d_model, d_k) * 0.1
