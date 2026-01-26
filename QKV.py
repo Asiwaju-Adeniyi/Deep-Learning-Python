@@ -22,3 +22,10 @@ d_k = 3
 Wq = np.random.randn(d_model, d_k) * 0.1
 Wk = np.random.randn(d_model, d_k) * 0.1
 Wv = np.random.randn(d_model, d_k) * 0.1
+
+#Create Query Matrix
+
+Q = np.dot(X, Wq)
+print("Query Matrix Q:")
+print(Q)
+print(f"Shape: {Q.shape}")
