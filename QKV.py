@@ -29,3 +29,16 @@ Q = np.dot(X, Wq)
 print("Query Matrix Q:")
 print(Q)
 print(f"Shape: {Q.shape}")
+
+#Construct Key Matrix
+
+K = np.dot(X, Wk)
+print("Key Matrix K:")
+print(K)
+print(f"Shape: {K.shape}")
+
+#Construct Value Matrix
+V = np.dot(X, Wv)
+print("Value Matrix V:")
+print(V)
+print(f"Shape: {V.shape}")
