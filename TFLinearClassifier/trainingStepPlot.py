@@ -14,3 +14,11 @@ def training_step(inputs, targets, W, b):
     b.assign_sub(grad_loss_wrt_b * learning_rate)
     return loss
 
+for step in range(40):
+    loss = training_step(inputs, targets, W, b)
+    print(f"Loss at step {step}: {loss:.4f}")
+
+predictions = model(inputs, W, b)
+plt.scatter(inputs[:, 0], inputs[:, 1], c=predictions[:, 0] > 0.5)
+plt.show()
+
