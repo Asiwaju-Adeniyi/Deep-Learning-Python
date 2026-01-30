@@ -3,3 +3,5 @@ from keras.datasets import imdb
 
 train_data[0]
 train_labels[0]
+
+max([max(sequence) for sequence in train_data])
